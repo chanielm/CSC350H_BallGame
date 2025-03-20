@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         transform.localScale *= 2;
-        float mag = Random.Range(3, 10);
+        float mag = Random.Range(3f, 10f);
         float dir = Random.Range(0, 2 * Mathf.PI);
         Vector2 force = new Vector2(Mathf.Cos(dir), Mathf.Sin(dir)) * mag;
         Debug.Log($"Magnitude: {mag}, Direction: {dir*180/Mathf.PI}*");
